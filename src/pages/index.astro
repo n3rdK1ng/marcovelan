@@ -1,50 +1,101 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import MainHead from "../components/MainHead.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+<html class="dark" lang="en">
+  <head>
+    <MainHead title="Marco Velan: Resume" description="Marco Velan: Resume" />
+  </head>
+  <body class="dark:bg-dark-bg">
+    <main class="max-w-2xl m-auto p-4">
+      <h1 class="text-4xl font-bold mt-6 mb-4">Resume</h1>
+      <p class="dark:border-l-white border-l-black border-l-2 pl-4">
+        I'm a young software enthusiast from <b>Ostrava</b> with many years of experience
+        in learning how to code and mainly automate whole lot of things around me.
+        <br />
+        <br />
+        My focus at the time is on <b>front-end development</b> but I'm always open
+        to new challenges and learning new things.
+      </p>
+      <h2 class="mt-10 mb-4 text-3xl font-semibold">☎️ Contact information</h2>
+      <p>
+        📧 &nbsp; <a href="mailto:marco.velan10@gmail.com"
+          >marco.velan10@gmail.com</a
+        >
+      </p>
+      <p>
+        🔗 &nbsp; <a href="https://www.linkedin.com/in/marco-velan-19669623a/"
+          >LinkedIn</a
+        >
+      </p>
+      <hr />
+      <h2 class="mt-10 mb-4 text-3xl font-semibold">👨‍💻 Experience</h2>
+      <h3 class="text-2xl font-medium mt-8 mb-2">Frontend Development</h3>
+      <p class="mb-2 mt-2 italic text-grey-text">
+        <b>Work on myself</b>, Ostrava, Czech Republic – (2022 - present)
+      </p>
+      <p>
+        Trying to learn new things and improve my skills in front-end
+        development. Learning through online courses and my own projects. I'm
+        also getting some experience in school or freelance projects with the
+        help of my friend who's much more experienced in the craft. The main
+        focus is on React and TypeScript. My biggest motivation is to create
+        something useful and interesting.
+      </p>
+      <h3 class="text-2xl font-medium mt-8 mb-2">Automations</h3>
+      <p class="mb-2 mt-2 italic text-grey-text">
+        <b>Hobby</b>, Ostrava, Czech Republic – (2018 - present)
+      </p>
+      <p>
+        I'm always trying to automate things around me. I'm using Python and
+        JavaScript for this purpose. I'm also trying to learn new things and
+        improve my skills in this area. Once I even made my own server with an
+        old PC wreck for my Discord bot. My biggest project in this area was a
+        final project for my school. It was a virtual assistant that helped me
+        to organize not just my school life.
+      </p>
+      <h3 class="text-2xl font-medium mt-8 mb-2">Crew Trainer</h3>
+      <p class="mb-2 mt-2 italic text-grey-text">
+        <b>McDonald's</b>, Ostrava, Czech Republic – (2020 - 2022)
+      </p>
+      <p>
+        I was a crew trainer in McDonald's. I was responsible for training new
+        employees and helping them to get used to the job. I was also responsible
+        for the quality of the food and the cleanliness of the restaurant.
+      </p>
+      <hr />
+      <h2 class="mt-10 mb-4 text-3xl font-semibold">🗣 Languages</h2>
+      <h3>
+        Czech 🇨🇿
+        <p>Native speaker</p>
+      </h3>
+      <h3>
+        English 🇺🇸
+        <p>Comfortable spoken and written</p>
+      </h3>
+      <h3>
+        Croatian 🇭🇷
+        <p>Able to comunicate</p>
+      </h3>
+      <h3>
+        Spanish 🇪🇸
+        <p>Bit more than basics</p>
+      </h3>
+      <hr />
+      <h2 class="mt-10 mb-4 text-3xl font-semibold">🤠 Hobbies</h2>
+      <p>Swimmming</p>
+      <p>Automating</p>
+      <p>Discovering the nature</p>
+      <p>Spending time with friends</p>
+      <hr />
+      <h2 class="mt-10 mb-4 text-3xl font-semibold">😎 Achievements</h2>
+      <p>
+        2019 <em>–</em> Went on the same voyage as my namesake.
+      </p>
+      <p>
+        2021 <em>–</em> Allowed by Czech court to do adult stuff before the age of
+        18
+      </p>
+    </main>
+  </body>
 </html>
