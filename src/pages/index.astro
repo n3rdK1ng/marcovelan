@@ -1,5 +1,6 @@
 ---
 import MainHead from "../components/MainHead.astro";
+import GitLink from "../components/GitLink.astro";
 ---
 
 <html class="dark" lang="en">
@@ -7,8 +8,18 @@ import MainHead from "../components/MainHead.astro";
     <MainHead title="Marco Velan: Resume" description="Marco Velan: Resume" />
   </head>
   <body class="dark:bg-dark-bg">
+    <div class="banner mb-0 pt-1">
+      <div
+        class="flex items-center justify-between mt-32 pb-8 mx-auto max-w-2xl pl-4 textshadow"
+      >
+        <h1 class="text-5xl font-bold">Resume</h1>
+        <div class="opacity-40 hover:opacity-80 transition duration-200 pr-4">
+          <GitLink />
+        </div>
+      </div>
+    </div>
+
     <main class="max-w-2xl m-auto p-4">
-      <h1 class="text-4xl font-bold mt-6 mb-4">Resume</h1>
       <p class="dark:border-l-white border-l-black border-l-2 pl-4">
         I am a highly motivated software enthusiast with a passion for front-end
         development and automating tasks. With years of experience in learning
